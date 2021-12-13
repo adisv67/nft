@@ -2,7 +2,7 @@ import React from 'react'
 import'./Header.css'
 import punkLogo from '../assets/header/cryptopunk-logo.png'
 import searchIcon from '../assets/header/search.png'
-
+import themeSwitchIcon from '../assets/header/theme-switch.png'
 const header = () => {
     return (
         <div className='header'>
@@ -19,6 +19,14 @@ const header = () => {
                 <p>Drops</p>
                 <p>Marketplace</p>
                 <p>Create</p>
+            </div>
+            <div className='headerActions'>
+                <div className='themeSwitchContainer'>
+                    <img src={themeSwitchIcon} alt='' />
+                </div>
+            </div>
+            <div className='loginBtn'>
+                GET IN
             </div>
         </div>
     )
