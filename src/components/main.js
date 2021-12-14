@@ -35,24 +35,18 @@ const Main = ({selectedPunk, punkListData}) => {
                         </div>
                         <div className='ownerDetails'>
                             <div className='ownerNameAndHandle'>
-                                <div>
-                                    {activePunk.owner.address}
-                                </div>
-                                <div className='ownerAddress'>
-                                    <div className='ownerhandle'>
-                                        Adesh Sonawane
-                                    </div>
-                                    <div className='ownerLink'>
-                                        <img src={instagramLogo} alt='' />
-                                    </div>
-                                    <div className='ownerLink'>
-                                        <img src={twitterLogo} alt='' />
-                                    </div>
-                                    <div className='ownerLink'>
-                                        <img src={moreIcon} alt='' />
-                                    </div>
-                                </div>
+                                <div>{activePunk.owner.address}</div>
+                                <div className='ownerHandle'> @Adesh Sonawane</div>
                             </div>
+                        </div>
+                        <div className='ownerLink'>
+                            <img src={instagramLogo} alt='' />
+                        </div>
+                        <div className='ownerLink'>
+                            <img src={twitterLogo} alt='' />
+                        </div>
+                        <div className='ownerLink'>
+                            <img src={moreIcon} alt='' />
                         </div>
                  </div>
              </div>           
@@ -61,3 +55,6 @@ const Main = ({selectedPunk, punkListData}) => {
 }
 
 export default Main
+
+
+
